@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Navbar from "./Navbar";
-import Intro from "./Intro";
+import Navbar from "./navbar.jsx";
+import Navbar from "./navbar.jsx";
 
 const NAV    = "#0a1628";
 const NAVY   = "#0d1f3c";
