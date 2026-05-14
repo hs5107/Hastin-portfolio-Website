@@ -395,9 +395,9 @@ function SkillBar({ name, level }) {
 
 function Skills() {
   const groups = [
-    { title:"Languages",          items:[{name:"Python",level:90},{name:"C/C++",level:85},{name:"JavaScript",level:75},{name:"MATLAB",level:70}] },
-    { title:"Mathematics & Signal and Systems",  items:[{name:"Signal and Systems",level:92},{name:"Mathematical Modelling+optimization",level:88},{name:"Linear Algebra",level:85},{name:"Fourier Analysis",level:88}] },
-    { title:"Frameworks & Tools", items:[{name:"NumPy / Matplotlib",level:88},{name:"React.js",level:60},{name:"DBMS",level:85},{name:"Git & GitHub",level:72}] },
+    { title:"Languages",          items:[{name:"Python",level:100},{name:"C/C++",level:100},{name:"JavaScript",level:100},{name:"MATLAB",level:100}] },
+    { title:"Mathematics & Signal and Systems",  items:[{name:"Signal and Systems",level:100},{name:"Mathematical Modelling+optimization",level:100},{name:"Linear Algebra",level:100},{name:"Fourier Analysis",level:100}] },
+    { title:"Frameworks & Tools", items:[{name:"NumPy / Matplotlib",level:100},{name:"React.js",level:100},{name:"DBMS",level:100},{name:"Git & GitHub",level:100}] },
   ];
   return (
     <section id="skills" style={{ padding:"clamp(4rem,8vw,7rem) clamp(1.2rem,4vw,2rem)", background:NAV }}>
@@ -407,7 +407,7 @@ function Skills() {
           {groups.map(g=>(
             <div key={g.title}>
               <div style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:"1.2rem", fontWeight:700, color:GOLD, marginBottom:"1.8rem", paddingBottom:"0.75rem", borderBottom:`1px solid ${BORDER}` }}>{g.title}</div>
-              {g.items.map(s=><SkillBar key={s.name} {...s}/>)}
+              {g.items.map(s=><SkillBar key={s.name} name={s.name}/>)}
             </div>
           ))}
         </div>
