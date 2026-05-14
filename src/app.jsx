@@ -384,7 +384,7 @@ function SkillBar({ name, level }) {
     <div ref={ref} style={{ marginBottom:"1.4rem" }}>
       <div style={{ display:"flex", justifyContent:"space-between", marginBottom:"8px" }}>
         <span style={{ fontFamily:"'Inter',sans-serif", fontSize:"0.82rem", color:WHITE, letterSpacing:"1px" }}>{name}</span>
-        <span style={{ fontFamily:"'Inter',sans-serif", fontSize:"0.72rem", color:GOLD }}>{level}%</span>
+       
       </div>
       <div style={{ height:"1px", background:"rgba(255,255,255,0.08)", position:"relative" }}>
         <div style={{ position:"absolute", top:0, left:0, height:"1px", width:`${w}%`, background:`linear-gradient(90deg,${GOLD}60,${GOLD})`, transition:"width 1.4s cubic-bezier(0.4,0,0.2,1)" }}/>
